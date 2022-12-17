@@ -1,2 +1,2 @@
 # calculator
-A little calculator programmed in Python
+A little calculator programmed in Java
