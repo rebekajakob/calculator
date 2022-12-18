@@ -9,7 +9,7 @@ function App() {
         alert(number)
     }
   return (
-    <div className="App">
+    <div className="flex flex-col min-h-screen">
       <NumberButtons/>
         <Footer/>
     </div>
