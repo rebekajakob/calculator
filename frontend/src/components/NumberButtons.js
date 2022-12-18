@@ -12,7 +12,7 @@ const NumberButtons = () => {
         for (let i = 1; i < 10; i++) {
             buttons.push(<Button key={i} text={i} click={click}/>)
         }
-        buttons.push(<div></div>)
+        buttons.push(<div key={10}></div>)
         buttons.push(<Button key={0} text={0} click={click}/>)
         return buttons;
     }
