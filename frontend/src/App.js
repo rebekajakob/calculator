@@ -1,7 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import Button from "./components/Button";
 
 function App() {
+    const number = 1
+    function click() {
+        alert(number)
+    }
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +23,10 @@ function App() {
           Learn React
         </a>
       </header>
+      <Button text={number} onClick={click}/>
+        <h1 className="text-3xl font-bold underline">
+            Hello world!
+        </h1>
     </div>
   );
 }
