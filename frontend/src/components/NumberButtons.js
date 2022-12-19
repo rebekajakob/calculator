@@ -18,10 +18,8 @@ const NumberButtons = () => {
 
     const buttons = createNumberButtons();
     return (
-        <div class="col-span-3">
         <div className="grid grid-cols-3 gap-4">
             {buttons}
-        </div>
         </div>
     )
 }
