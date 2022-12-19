@@ -10,7 +10,9 @@ function App() {
     }
   return (
     <div className="flex flex-col min-h-screen">
-      <NumberButtons/>
+        <div className="grid grid-cols-5 gap-4">
+            <NumberButtons/>
+        </div>
         <Footer/>
     </div>
   );
