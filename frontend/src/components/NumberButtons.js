@@ -2,7 +2,6 @@ import Button from "./Button";
 import {useState} from "react";
 
 const NumberButtons = () => {
-    const [number, setNumber] = useState()
     function click(clickedNumber){
         alert(clickedNumber)
     }
