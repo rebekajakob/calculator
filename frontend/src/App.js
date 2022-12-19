@@ -1,6 +1,7 @@
 import './App.css';
 import Button from "./components/Button";
 import NumberButtons from "./components/NumberButtons";
+import Footer from "./components/Footer";
 
 function App() {
     const number = 1
@@ -8,8 +9,9 @@ function App() {
         alert(number)
     }
   return (
-    <div className="App">
+    <div className="flex flex-col min-h-screen">
       <NumberButtons/>
+        <Footer/>
     </div>
   );
 }
