@@ -7,12 +7,23 @@ import DisplayRow from "./components/DisplayRow";
 import {useState} from "react";
 
 function App() {
-    const [text, setText] = useState("");
+    const [text, setText] = useState("0");
     function clickActionButton(clickedAction){
-        setText(text + " " + clickedAction + " ")
+        if (text.charAt(text.length - 2) !== clickedAction){
+            if(text.charAt(text.length - 1) === " "){
+                setText(text.slice(0,text.length - 2) + clickedAction + " ")
+            } else{
+                setText(text + " " + clickedAction + " ")
+            }
+        }
+
     }
     function clickNumberButton(clickedNumber){
-        setText(text + clickedNumber)
+        if (text ==="0"){
+            setText(clickedNumber.toString())
+        } else {
+            setText(text + clickedNumber)
+        }
     }
 
     return (
