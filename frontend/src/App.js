@@ -4,20 +4,22 @@ import NumberButtons from "./components/NumberButtons";
 import Footer from "./components/Footer";
 import ActionButtons from "./components/ActionButtons";
 import DisplayRow from "./components/DisplayRow";
+import {useState} from "react";
 
 function App() {
+    const [text, setText] = useState("");
     function clickActionButton(clickedAction){
-        alert(clickedAction)
+        setText(text + " " + clickedAction + " ")
     }
     function clickNumberButton(clickedNumber){
-        alert(clickedNumber)
+        setText(text + clickedNumber)
     }
 
     return (
         <div className="flex flex-col min-h-screen">
-            <div className="grid grid-cols-5 gap-4 px-4">
+            <div className="grid grid-cols-5 gap-4 px-4 pt-2">
                 <div className="col-span-5 ">
-                    <DisplayRow text={"ola!"}/>
+                    <DisplayRow text={text}/>
                 </div>
                 <div className="col-span-3">
                     <NumberButtons clickNumber={clickNumberButton}/>
