@@ -33,7 +33,7 @@ function App() {
         let operation = "+"
         for(let i=0; i< calculate.length; i++){
             if(i%2===0){
-                if (operation == "+"){
+                if (operation === "+"){
                     result += parseInt(calculate[i])
                 } else{
                     result -= parseInt(calculate[i])
