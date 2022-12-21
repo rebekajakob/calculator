@@ -6,26 +6,31 @@ import ActionButtons from "./components/ActionButtons";
 import DisplayRow from "./components/DisplayRow";
 
 function App() {
-    const number = 1
-    function click() {
-        alert(number)
+    function clickActionButton(clickedAction){
+        alert(clickedAction)
     }
-  return (
-    <div className="flex flex-col min-h-screen">
-        <div className="grid grid-cols-5 gap-4 px-4">
-            <div className="col-span-5 ">
-                <DisplayRow text={"ola!"}/>
+    function clickNumberButton(clickedNumber){
+        alert(clickedNumber)
+    }
+
+    return (
+        <div className="flex flex-col min-h-screen">
+            <div className="grid grid-cols-5 gap-4 px-4">
+                <div className="col-span-5 ">
+                    <DisplayRow text={"ola!"}/>
+                </div>
+                <div className="col-span-3">
+                    <NumberButtons clickNumber={clickNumberButton}/>
+                </div>
+                <div className="col-span-2">
+                    <ActionButtons clickEvent={clickActionButton}/>
+                </div>
             </div>
-            <div className="col-span-3">
-                <NumberButtons/>
-            </div>
-            <div className="col-span-2">
-                <ActionButtons/>
-            </div>
+            <Footer/>
         </div>
-        <Footer/>
-    </div>
-  );
+    );
+
+
 }
 
 export default App;
