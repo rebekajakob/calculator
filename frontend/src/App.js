@@ -1,5 +1,4 @@
 import './App.css';
-import Button from "./components/Button";
 import NumberButtons from "./components/NumberButtons";
 import Footer from "./components/Footer";
 import ActionButtons from "./components/ActionButtons";

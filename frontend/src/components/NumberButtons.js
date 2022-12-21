@@ -1,5 +1,4 @@
 import Button from "./Button";
-import {useState} from "react";
 
 const NumberButtons = ({clickNumber}) => {
 
