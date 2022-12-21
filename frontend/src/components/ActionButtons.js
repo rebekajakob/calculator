@@ -1,11 +1,12 @@
 import Button from "./Button";
 
-const ActionButtons = ({clickEvent}) => {
+const ActionButtons = ({clickEvent, equalEvent}) => {
 
     function createButtons(){
         const buttons = []
         buttons.push(<Button key={"+"} text={"+"} click={clickEvent} />)
         buttons.push(<Button key={"-"} text={"-"} click={clickEvent} />)
+        buttons.push(<Button key={"="} text={"="} click={equalEvent} />)
         return buttons
     }
 
