@@ -7,7 +7,7 @@ const ActionButtons = ({clickEvent, equalEvent, clearEvent}) => {
         buttons.push(<Button key={"+"} text={"+"} click={clickEvent} color={"bg-pink-400"} hoverColor={"hover:bg-pink-300"} />)
         buttons.push(<Button key={"-"} text={"-"} click={clickEvent} color={"bg-pink-400"} hoverColor={"hover:bg-pink-300"} />)
         buttons.push(<Button key={"="} text={"="} click={equalEvent} color={"bg-violet-400"} hoverColor={"hover:bg-violet-300"} />)
-        buttons.push(<Button key={"del"} text={"Delete"} click={clearEvent} color={"bg-emerald-400"} hoverColor={"hover:bg-emerald-300"} />)
+        buttons.push(<Button key={"del"} text={"Clear"} click={clearEvent} color={"bg-emerald-400"} hoverColor={"hover:bg-emerald-300"} />)
         return buttons
     }
 

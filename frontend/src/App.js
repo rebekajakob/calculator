@@ -46,6 +46,10 @@ function App() {
         setText(result.toString())
     }
 
+    function clickClearButton(){
+        setText("0")
+    }
+
     return (
         <div className="flex flex-col min-h-screen">
             <div className="grid grid-cols-5 gap-4 px-4 pt-2">
@@ -56,7 +60,7 @@ function App() {
                     <NumberButtons clickNumber={clickNumberButton}/>
                 </div>
                 <div className="col-span-2">
-                    <ActionButtons clickEvent={clickActionButton} equalEvent={clickEqualButton}/>
+                    <ActionButtons clickEvent={clickActionButton} equalEvent={clickEqualButton} clearEvent={clickClearButton}/>
                 </div>
             </div>
             <Footer/>
