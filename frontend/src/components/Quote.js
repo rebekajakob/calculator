@@ -38,7 +38,7 @@ const Quote = () => {
 
     return(
         <div>
-            <p>{chosenQuote}</p>
+            <p className={"px-3.5 mt-10 text-center italic"}>{chosenQuote}</p>
         </div>
     )
 }
