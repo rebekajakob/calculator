@@ -3,10 +3,13 @@ import NumberButtons from "./components/NumberButtons";
 import Footer from "./components/Footer";
 import ActionButtons from "./components/ActionButtons";
 import DisplayRow from "./components/DisplayRow";
-import {useState} from "react";
+import {useState, useEffect} from "react";
+import Quote from "./components/Quote";
 
 function App() {
     const [text, setText] = useState("0");
+
+
     function clickActionButton(clickedAction){
         if (text.charAt(text.length - 2) !== clickedAction){
             if(text.charAt(text.length - 1) === " "){
@@ -63,6 +66,7 @@ function App() {
                     <ActionButtons clickEvent={clickActionButton} equalEvent={clickEqualButton} clearEvent={clickClearButton}/>
                 </div>
             </div>
+            <Quote/>
             <Footer/>
         </div>
     );
