@@ -15,7 +15,7 @@ const Quote = () => {
         fetchAllQuotes()
     },[])
 
-    /** Every 10 seconds make a random number between 1 and 1643 (number of quotes) */
+    /** Every 10 seconds make a random number between 0 and 1642 (number of quotes) */
     useEffect(() => {
         const myInterval = setInterval(fetchQuote, 10000);
 
@@ -26,7 +26,7 @@ const Quote = () => {
     }, []);
 
     const fetchQuote = () => {
-        setRandomNumber(Math.floor(Math.random()* 1643 ) +1);
+        setRandomNumber(Math.floor(Math.random()* 1642));
     };
 
     /** When our random number changing, change the chosen quote as well */
